@@ -3,11 +3,11 @@
     height: 65px;
 }
 .container{
-    display: flex;
-    flex-direction: row;
-   justify-content: center;
+   /* display: flex;
+     flex-direction: row;
+   justify-content: space-between;
     flex-wrap: wrap;
+   
+    align-content: center; */
     max-height: 2500px;
-    max-width: 2500px;
-    align-content: center;
 }
