@@ -6,7 +6,7 @@ const ListImages = (props) => {
    /*  const gg =document.querySelector("img-fluid img-thumbnail");
     console.log(gg) */
     return (
-            <img className= "img-fluid img-thumbnail" alt="images" src={imgs} />
+            <img className= "img-fluid img-rounded" alt="images" src={imgs} />
     )
 }
 export default ListImages

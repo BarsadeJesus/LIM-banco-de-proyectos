@@ -11,3 +11,6 @@
     align-content: center; */
     max-height: 2500px;
 }
+.img-fluid{
+  border-radius: 20px;
+}
