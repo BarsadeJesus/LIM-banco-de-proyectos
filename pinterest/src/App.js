@@ -1,6 +1,7 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
+//import "./sass/style.scss";
 //import {useState,useEffect} from "react";
 //import UseCurrentScrollPosition from "./Components/scroll";
 

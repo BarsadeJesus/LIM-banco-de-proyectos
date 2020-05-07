@@ -1,0 +1,31 @@
+@import "variables";
+@mixin contenedor {
+  /* background: indigo; */
+  max-width: 1300px;
+     
+}
+@mixin mmgrid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+     
+}
+@mixin mmgridcolumn {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+@mixin mmgridcolumn-li{
+  /* background: grey; */
+  list-style-type: none;
+  border-radius: $border-radius;
+  width: $width-image;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.pintImg{
+    width: 55px;
+    height: 65px;
+}
+
