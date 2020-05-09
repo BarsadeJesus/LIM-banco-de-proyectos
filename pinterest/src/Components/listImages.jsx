@@ -1,13 +1,39 @@
-import React from "react";
-
+import React , {useState} from "react";
+import Modal from "react-bootstrap/Modal";
 const ListImages = (props) => {
+    const [smShow, setSmShow] = useState();
+   
     const imgs=props.dataImages;
-    //console.log(imgs)
-   /*  const gg =document.querySelector("img-fluid img-thumbnail");
-    console.log(gg) */
+
+    /* const handleButtonClick = event => {
+        event.preventDefault();
+        setSmShow(true);   
+      }; */
+   const loadModalImg = (event) => {
+       event.preventDefault();
+       return (
+            <div>
+            
+            <Modal
+            size="sm"
+            show={smShow}
+            onHide={() => setSmShow(false)}
+            aria-labelledby="example-modal-sizes-title-sm"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="example-modal-sizes-title-sm">
+                Small Modal
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>...</Modal.Body>
+          </Modal>:null
+              
+          </div>  
+       ) }
     return (
        <li>
-            <img className= "img-fluid" alt="images" src={imgs} />
+          <button  onClick={event=>{loadModalImg(event)}}>
+              <img className= "img-fluid" alt="images" src={imgs} /></button>
         </li>   
     )
 }

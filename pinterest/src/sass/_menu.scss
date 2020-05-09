@@ -1,4 +1,25 @@
 @import "mixins";
+@import "variables";
+header{
+  .nb{
+    background: white;
+    .formwidth{
+      width: 970px;
+      .isearch{
+        width: 850px;
+        height: 48px;
+        border-radius: 30px;
+        border-color: $colorInputSearch;
+        color: #333;
+        background-color: $colorInputSearch;
+        font-size: 16px;
+        font-weight: normal;
+        outline: none;
+      }
+    }
+  }
+  
+}
 
 body {
  
