@@ -1,5 +1,12 @@
 @import "mixins";
 @import "variables";
+* {
+  margin: 0px;
+ padding: 0px;
+ /* border-radius: 60px; */
+/*  background-color: yellow; */
+
+}
 header{
   .nb{
     background: white;

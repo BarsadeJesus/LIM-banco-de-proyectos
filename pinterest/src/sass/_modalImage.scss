@@ -1,0 +1,73 @@
+@import "variables";
+@import "mixins";
+* {
+   margin: 0px;
+  padding: 0px;
+}
+
+.container-modal{
+ /*  width: 1000px;
+  height:100%; */
+  border-radius: 30px;
+  margin: opx;
+  padding: 0px;
+
+  /*  border-radius: 30px; */
+}
+.container-mod-body{
+  width: 100%;
+  height: 350px;
+ /*  position: absolute; */
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  border-radius: 30px;
+  background-color: red;
+ /*  height: 550px; */
+ 
+/*  background-color: green; */
+
+  }
+  .figure{
+    margin: 0px;
+    padding: 0px;
+    width: 800px;
+    height: 550px;
+   display: flex;
+    background: black;
+    border-radius: 30px;
+   position:absolute;
+    
+  }
+ .middle-figure {
+  margin: 0px;
+  padding: 0px;
+   width: 400px;
+  height: 550px;
+  background: brown;
+  border-radius: 30px;
+ 
+ } 
+ .imgFigure{
+  width: 100%;
+  height: 550px;
+ 
+  /* padding: 55px 5px 5px 5px; */
+  /*  margin: 0px;
+  padding: 0px; */
+  
+ 
+   /* display: block;
+   background-attachment: fixed;
+   background-size:  cover;  */
+  }   
+ 
+ .middle-desc{ 
+  margin: 0px;
+  padding: 0px;
+  width: 400px;
+  height: 550px;
+ 
+   background-color:green;
+  
+ }

@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
+/* ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App isComponent={false} />
   </React.StrictMode>,
+  document.getElementById('root')
+); */
+ReactDOM.render(
+    <App /* isComponent={false} */ />,
   document.getElementById('root')
 );
 

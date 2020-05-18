@@ -1,8 +1,7 @@
 @import "variables";
+@import "mixins";
 
-.img-fluid{
+.butt-Imag{
     border-radius: $border-radius;
-    width: $width-image;
-   /*  background: red; */
-  
-  }
+    border: none;
+  }  

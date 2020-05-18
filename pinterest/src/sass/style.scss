@@ -1,11 +1,15 @@
 @import "mixins";
 @import "menu";
 @import "listImages";
+@import "modalImage";
 
 
 * {
     margin: 0px;
     padding: 0px;
+   
   }
-
+.container-components{
+  background-color: black;
   
+}

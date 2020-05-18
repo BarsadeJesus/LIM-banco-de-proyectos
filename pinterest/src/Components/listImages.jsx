@@ -1,39 +1,28 @@
-import React , {useState} from "react";
-import Modal from "react-bootstrap/Modal";
-const ListImages = (props) => {
-    const [smShow, setSmShow] = useState();
-   
-    const imgs=props.dataImages;
+import React from "react";
+import "../sass/style.scss";
 
-    /* const handleButtonClick = event => {
-        event.preventDefault();
-        setSmShow(true);   
-      }; */
+const ListImages = ({ dataImages, idImag, objSel }) => {
+   
+    const imgs=dataImages;
+    const idImg = idImag;
+   
+    let obSe = objSel;
+    
    const loadModalImg = (event) => {
-       event.preventDefault();
-       return (
-            <div>
-            
-            <Modal
-            size="sm"
-            show={smShow}
-            onHide={() => setSmShow(false)}
-            aria-labelledby="example-modal-sizes-title-sm"
-          >
-            <Modal.Header closeButton>
-              <Modal.Title id="example-modal-sizes-title-sm">
-                Small Modal
-              </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>...</Modal.Body>
-          </Modal>:null
-              
-          </div>  
-       ) }
+     event.preventDefault();
+    // setStateBoolean(true);
+     console.log("Paty")
+     obSe(imgs, true);
+     console.log(obSe)
+     //statemodal=stateBoolean;
+   
+      }
+       //console.log(stateBoolean);
     return (
        <li>
-          <button  onClick={event=>{loadModalImg(event)}}>
-              <img className= "img-fluid" alt="images" src={imgs} /></button>
+         {/*  <button  onClick={event=>{loadModalImg(event)}}> */}
+          <button className="butt-Imag" onClick={loadModalImg}>
+              <img className= "img-fluid" alt="images" src={imgs} idImg={idImg}/></button>
         </li>   
     )
 }
