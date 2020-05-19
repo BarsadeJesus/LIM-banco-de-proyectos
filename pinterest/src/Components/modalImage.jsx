@@ -25,8 +25,9 @@ console.log(selecObj);
       onHide={() => stateModalX(false)}
       aria-labelledby="example-modal-sizes-title-lg"
     >
-     {/*  <Modal.Header closeButton>
-        <Modal.Title id="example-modal-sizes-title-lg">
+     {/*  <div className="header1"> */}
+      {/* <Modal.Header closeButton className="header">
+        <Modal.Title  id="example-modal-sizes-title-lg">
           Large Modal
         </Modal.Title>
       </Modal.Header> */}
@@ -45,6 +46,7 @@ console.log(selecObj);
       </section>
         </div>
       </Modal.Body>
+     {/*  </div> */}
     </Modal>
   
     )

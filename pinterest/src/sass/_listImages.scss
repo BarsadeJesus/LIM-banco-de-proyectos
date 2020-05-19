@@ -1,7 +1,29 @@
 @import "variables";
 @import "mixins";
 
+* {
+  margin: 0px;
+  padding: 0px;
+ 
+}
+.lista{
+
+  border-radius: 20px;
+  border-color: purple; 
+
+}
+
 .butt-Imag{
-    border-radius: $border-radius;
-    border: none;
+  border: 0;
+    border-radius: $border-radius;  
   }  
+  .butt-Imag:focus{
+    outline: none;
+  }
+  .img-fluid{
+    border-radius: $border-radius;
+    width: $width-image;
+    border-radius: 20px;
+   /*  background: red; */
+  
+  }

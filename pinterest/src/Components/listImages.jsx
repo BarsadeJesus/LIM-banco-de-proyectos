@@ -19,7 +19,7 @@ const ListImages = ({ dataImages, idImag, objSel }) => {
       }
        //console.log(stateBoolean);
     return (
-       <li>
+       <li className="lista">
          {/*  <button  onClick={event=>{loadModalImg(event)}}> */}
           <button className="butt-Imag" onClick={loadModalImg}>
               <img className= "img-fluid" alt="images" src={imgs} idImg={idimg}/></button>

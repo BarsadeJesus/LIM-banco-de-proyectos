@@ -1,6 +1,6 @@
 @import "variables";
 @mixin contenedor {
-  /* background: indigo; */
+
   max-width: 1300px;
      
 }
@@ -15,6 +15,7 @@
 @mixin mmgridcolumn {
   padding-left: 30px; /* gutter size */
   background-clip: padding-box;
+ 
 }
 @mixin mmgridcolumn-li{
   /* background: grey; */
@@ -33,9 +34,4 @@
     height: 30px;
     
 }
-.img-fluid{
-  border-radius: $border-radius;
-  width: $width-image;
- /*  background: red; */
 
-}
