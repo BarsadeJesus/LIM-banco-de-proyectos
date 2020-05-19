@@ -1,7 +1,8 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 import "../sass/style.scss";
-
+//import { Link } from "react-router-dom";
+import DownloadImg from "./downloadimg"; 
 
   const ModalImage = ({selecObj, stateModal, stateModalX, downImg, hideModal}) => {
    // const [sttModal, setSttModal] = useState(stateModal);
@@ -12,7 +13,7 @@ import "../sass/style.scss";
      
      downImg(selecObj);
      hideModal(false)
-    /*  <Link className='linkis' to='/KitchenView'> Ordenes en espera </Link> */
+     
   }
     
 console.log(selecObj);
@@ -35,32 +36,17 @@ console.log(selecObj);
           <img src={selecObj} alt= "img" className="imgFigure"></img>
             </section>
             <section className="middle-desc">
-          <button onClick={downloadImg}>
-          Descargar </button>
+            <button className="btnDownload" onClick={event => {
+                          downloadImg(event);
+                        }}
+                    >
+                       <img className="points-Down" src="3puntos.png" alt = "trespuntos" />
+                        </button>
       </section>
         </div>
       </Modal.Body>
     </Modal>
   
-      /* <Modal 
-        size="sm"
-        show={stateModal}
-        onHide={() => stateModalX(false)}
-        aria-labelledby="example-modal-sizes-title-sm"
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="example-modal-sizes-title-sm">
-            Small Modal
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="altura">
-          <img className= "img-fluid" src={selecObj} alt= "img"></img>
-        </Modal.Body>
-        <Modal.Footer>
-          <button>Close</button>
-        </Modal.Footer>
-      </Modal> */
-     
     )
 }
 export default ModalImage;

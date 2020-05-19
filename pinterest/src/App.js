@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 //import './App.css';
 import "./sass/style.scss";
 import Menu from  "./Components/menu"; 
 import ModalImage from  "./Components/modalImage"; 
 import DownloadImg from "./Components/downloadimg";
+
+//import Routes from './Route';
 
 function App() {
   const [selectObj, setSelectObj] = useState();

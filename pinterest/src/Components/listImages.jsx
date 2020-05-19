@@ -4,7 +4,7 @@ import "../sass/style.scss";
 const ListImages = ({ dataImages, idImag, objSel }) => {
    
     const imgs=dataImages;
-    const idImg = idImag;
+    const idimg = idImag;
    
     let obSe = objSel;
     
@@ -22,7 +22,7 @@ const ListImages = ({ dataImages, idImag, objSel }) => {
        <li>
          {/*  <button  onClick={event=>{loadModalImg(event)}}> */}
           <button className="butt-Imag" onClick={loadModalImg}>
-              <img className= "img-fluid" alt="images" src={imgs} idImg={idImg}/></button>
+              <img className= "img-fluid" alt="images" src={imgs} idImg={idimg}/></button>
         </li>   
     )
 }

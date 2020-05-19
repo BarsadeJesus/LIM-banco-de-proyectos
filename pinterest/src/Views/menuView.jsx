@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import "./sass/style.scss";
 import Menu from  "./Components/menu"; 
 import ModalImage from  "./Components/modalImage"; 
-import DownloadImg from "./Components/downloadimg";
+/* import DownloadImg from "./Components/downloadimg"; */
 
 function MenuAndModal() {
   const [selectObj, setSelectObj] = useState();
@@ -30,7 +30,7 @@ console.log(selectObj);
 
    return (
     <div className= "container-components">
-      <DownloadImg dataImgDownload={selectObj}/>
+      {/* <DownloadImg dataImgDownload={selectObj}/> */}
     <ModalImage selecObj={selectObj} stateModal={stateModal} stateModalX={buttonModalX} hideModal= {hideModal} downImg={downImg}/>
    {/*  Tambien es posible hacerlo de esta otra forma, pasando setStateModal como funcion,
      tan solo se comentaria la funcion buttonModalX :
