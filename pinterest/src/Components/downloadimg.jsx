@@ -17,9 +17,8 @@ const DownloadImg = ({dataImgDownload}) => {
   return (
     <Document>
       <Page size="A4" style={styles.page}>
-      <View>
-          <Image style= {styles.logo} src={dataImgDownload} />
-          
+        <View>
+          <Image style= {styles.logo} src={dataImgDownload} /> 
         </View>
       </Page>
     </Document>

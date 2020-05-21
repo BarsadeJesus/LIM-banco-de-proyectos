@@ -4,22 +4,17 @@ import "../sass/style.scss";
 //import { Link } from "react-router-dom";
 import DownloadImg from "./downloadimg"; 
 
-  const ModalImage = ({selecObj, stateModal, stateModalX, downImg, hideModal}) => {
-   // const [sttModal, setSttModal] = useState(stateModal);
-
-    const downloadImg = (event) => {
-      event.preventDefault();
-      console.log("holis")
-     
-     downImg(selecObj);
-     hideModal(false)
-     
+const ModalImage = ({selecObj, stateModal, stateModalX, downImg, hideModal}) => {
+  const downloadImg = (event) => {
+    event.preventDefault();
+    console.log("holis")
+    downImg(selecObj);
+    hideModal(false)  
   }
     
-console.log(selecObj);
-    return(
-    
-      <Modal className="container-modal"
+  console.log(selecObj);
+  return(
+    <Modal className="container-modal"
       size="lg"
       show={stateModal}
       onHide={() => stateModalX(false)}
@@ -48,7 +43,6 @@ console.log(selecObj);
       </Modal.Body>
      {/*  </div> */}
     </Modal>
-  
-    )
+  )
 }
 export default ModalImage;
