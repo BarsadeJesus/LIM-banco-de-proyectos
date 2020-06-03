@@ -1,26 +1,31 @@
-import React from "react";
-import "../sass/style.scss";
+import React from 'react';
+import '../sass/style.scss';
 
+// eslint-disable-next-line react/prop-types
 const ListImages = ({ dataImages, idImag, objSel }) => {
-  const imgs=dataImages;
+  const imgs = dataImages;
   const idimg = idImag;
-  let obSe = objSel;
-    
+  const obSelected = objSel;
+
   const loadModalImg = (event) => {
     event.preventDefault();
     // setStateBoolean(true);
-    console.log("Paty")
-    obSe(imgs, true);
-    console.log(obSe)
-    //statemodal=stateBoolean;
-  }
-    //console.log(stateBoolean);
+    obSelected(imgs, true);
+    //  statemodal=stateBoolean;
+  };
+    //  console.log(stateBoolean);
   return (
     <li className="lista">
       {/*  <button  onClick={event=>{loadModalImg(event)}}> */}
-      <button className="butt-Imag" onClick={loadModalImg}>
-        <img className= "img-fluid" alt="images" src={imgs} idImg={idimg}/></button>
-    </li>   
-  )
-}
-export default ListImages
+      <button type="button" className="butt-Imag" onClick={loadModalImg}>
+        <img
+          className="img-fluid"
+          alt="images"
+          src={imgs}
+          idImg={idimg}
+        />
+      </button>
+    </li>
+  );
+};
+export default ListImages;
