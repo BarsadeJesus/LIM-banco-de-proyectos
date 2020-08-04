@@ -1,8 +1,14 @@
 @import "variables";
+.navbar-brand{
+  background: none;
+  border: none;
+}
+.pintimg{
+    width: 30px;
+    height: 30px;   
+}
 @mixin contenedor {
-
-  max-width: 1300px;
-     
+  max-width: 1300px;   
 }
 @mixin mmgrid {
   display: -webkit-box; /* Not needed if autoprefixing */
@@ -24,14 +30,5 @@
   width: $width-image;
   margin-top: 30px;
   margin-bottom: 40px;
-}
-.navbar-brand{
-  background: none;
-  border: none;
-}
-.pintImg{
-    width: 30px;
-    height: 30px;
-    
 }
 

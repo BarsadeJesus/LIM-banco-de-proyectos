@@ -22,7 +22,7 @@ const ListImages = ({ dataImages, idImag, objSel }) => {
           className="img-fluid"
           alt="images"
           src={imgs}
-          idImg={idimg}
+          idimg={idimg}
         />
       </button>
     </li>

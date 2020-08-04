@@ -1,18 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-expressions */
 import React, { useState, useEffect } from 'react';
-import '../sass/style.scss';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import Masonry from 'react-masonry-css';
 import ListImages from './listImages';
 //  import {ClientId, Endpoint, RandomLoad} from '../queryAPI';
 import QueryAPI from '../queryAPI';
+import '../sass/style.scss';
 /* const clientId= '652Zjwy-Bk7QxiJyZwuWpJxKEw7axxT4Aa0k4ybxO1M'
 const endpoint = 'https://api.unsplash.com/search/photos/?'  */
 
 // eslint-disable-next-line react/prop-types
 const Menu = ({ selecObj }) => {
-  //  const [trackValueIn, setTrackValueIn]=useState("https://api.unsplash.com/randomPhotos/?");
   const [trackValueIn, setTrackValueIn] = useState('https://api.unsplash.com/randomPhotos/?');
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
@@ -59,7 +58,7 @@ const Menu = ({ selecObj }) => {
       <header>
         <nav className="nb navbar navbar-expand-lg navbar-light">
           <button type="button" className="navbar-brand">
-            <img className="pintImg" src="pint.png" alt="pinterest" />
+            <img className="pintimg" src="pint.png" alt="lld" />
           </button>
           <button
             type="button"
@@ -74,7 +73,7 @@ const Menu = ({ selecObj }) => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
-              <li className="nav-item active">
+              {/* <li className="nav-item active">
                 <a className="nav-link" href="#">
                   Home
                   <span className="sr-only">(current)</span>
@@ -84,7 +83,7 @@ const Menu = ({ selecObj }) => {
                 <a className="nav-link" href="#">
                   Following
                 </a>
-              </li>
+              </li> */}
               <li>
                 <form className="form-inline formwidth" onSubmit={search}>
                   <input

@@ -2,14 +2,16 @@
 @import "variables";
 * {
   margin: 0px;
- padding: 0px;
+  padding: 0px;
+}
  /* border-radius: 60px; */
 /*  background-color: yellow; */
 
-}
+
 header{
   .nb{
     background: white;
+    padding: 20px;
     .formwidth{
       width: 970px;
       .isearch{
@@ -19,18 +21,14 @@ header{
         border-color: $colorInputSearch;
         color: #333;
         background-color: $colorInputSearch;
-       
         font-size: 16px;
         font-weight: normal;
         outline: none;
         background-repeat: no-repeat;
         background-position: -48px 0px;
-      }
-      
-      
+      } 
     }
   }
-  
 }
 
 body {

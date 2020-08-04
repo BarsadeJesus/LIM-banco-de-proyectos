@@ -49,7 +49,7 @@ const ModalImage = ({
                 downloadImg(event);
               }}
             >
-              <img className="points-Down" src="3puntos.png" alt="trespuntos" />
+              <img className="points-down" src="trespuntos.png" alt="trespuntos" />
             </button>
           </section>
         </div>
